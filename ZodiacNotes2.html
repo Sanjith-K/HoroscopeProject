@@ -1,0 +1,160 @@
+<html>
+   <head>
+      <title>Zodiac Notes</title>
+      <script>
+        function fortune()
+        {
+                // Logical OR ( || )
+               // Cond1 Cond2  Result
+              //   T     T      T-Runs
+             //    F     T      T-Runs
+            //     T     F      T-Runs
+          //       F     F      F-Does Not Run
+
+          // Logical AND ( && )
+         // Cond1 Cond2  Result
+        //   T     T      T-Runs
+       //    F     T      F-Does Not Run
+      //     T     F      F-Does Not Runs
+    //       F     F      F-Does Not Run
+             var month = 1;
+             var day = 2;
+
+             month = document.getElementById('monthid').value;
+
+             day = document.getElementById('dayid').value;
+
+             document.getElementById("myMonth").innerHTML = month;
+             document.getElementById("myDay").innerHTML = day;
+             //ARies March 21 April 19
+             if(month == 3 || month == 4)
+             {
+               document.getElementById("message").innerHTML = "You went in 1st if statement ";
+             }
+
+             if((month == 1 &&  (day <= 31 && day >= 20)) || (month == 2 && (day >= 1  && day <= 19)))
+             {
+                    document.getElementById("message").innerHTML = "You went in 2nd if statement ";
+
+                    document.getElementById("message").innerHTML = "Aquarius: You like to help others for goodness!"
+                    document.getElementById("symbol").innerHTML = "<img src = 'Aquariuspic.jpg'>";
+             }
+             if((month == 2 &&  (day <= 19 && day >= 18)) || (month == 3 && (day >= 1  && day <= 19)))
+             {
+                    document.getElementById("message").innerHTML = "You went in 3rd if statement ";
+
+                    document.getElementById("message").innerHTML = "Pisces: You are very empathetic and creative!"
+                    document.getElementById("symbol").innerHTML = "<img src = 'Piscespic.jpg'>";
+              }
+              if((month == 3 &&  (day <= 21 && day >= 20)) || (month == 4 && (day >= 1  && day <= 20)))
+
+              {
+                    document.getElementById("message").innerHTML = "You went in 4th if statement ";
+
+                    document.getElementById("message").innerHTML = "Aries: You are a leader and are passionate!"
+                    document.getElementById("symbol").innerHTML = "<img src = 'Ariespic.jpg'>";
+              }
+
+             //Taurus (4/20 - 5/20)
+              if((month == 4 &&  (day <= 30 && day >= 20)) || (month == 5 && (day >= 1  && day <= 20)))
+            {
+                    document.getElementById("message").innerHTML = "You went in 5th if statement ";
+
+                    document.getElementById("message").innerHTML = "Taurus: You are impulsive to make decisions!";
+                   document.getElementById("symbol").innerHTML = "<img src = 'Tauruspic.jpg'>";
+            }
+              if((month == 5 &&  (day <= 31 && day >= 21)) || (month == 6 && (day >= 1  && day <= 21)))
+            {
+                document.getElementById("message").innerHTML = "You went in 6th if statement ";
+
+                document.getElementById("message").innerHTML = "Gemini: You are quick-witted and curious!";
+                document.getElementById("symbol").innerHTML = "<img src = 'Geminipic.jpg'>";
+
+            }
+            if((month == 6 &&  (day <= 22 && day >= 21)) || (month == 7 && (day >= 1  && day <= 22)))
+            {
+              document.getElementById("message").innerHTML = "You went in 7th if statement ";
+
+              document.getElementById("message").innerHTML = "Cancer: You focus on self-care and are a safe space!";
+              document.getElementById("symbol").innerHTML = "<img src = 'Cancerpic.jpg'>";
+
+            }
+            if((month == 7 &&  (day <= 23 && day >= 22)) || (month == 8 && (day >= 1  && day <= 23)))
+            {
+              document.getElementById("message").innerHTML = "You went in 8th if statement ";
+
+            document.getElementById("message").innerHTML = "Leo: You are enthusiastic and generous!";
+            document.getElementById("symbol").innerHTML = "<img src = 'Leopic.jpg'>";
+            }
+            if((month == 8 &&  (day <= 24 && day >= 23)) || (month == 9 && (day >= 1  && day <= 23)))
+            {
+              document.getElementById("message").innerHTML = "You went in 9th if statement ";
+
+              document.getElementById("message").innerHTML = "Virgo: You are logical and practical!";
+              document.getElementById("symbol").innerHTML = "<img src = 'Virgopic.jpg'>";
+            }
+            if((month == 9 &&  (day <= 24 && day >= 23)) || (month == 10 && (day >= 1  && day <= 23)))
+            {
+              document.getElementById("message").innerHTML = "You went in 10th if statement ";
+
+              document.getElementById("message").innerHTML = "Libra: You are charismatic and well-balanced!";
+              document.getElementById("symbol").innerHTML = "<img src = 'Librapic.jpg'>";
+            }
+            if((month == 10 &&  (day <= 24 && day >= 23)) || (month == 11 && (day >= 1  && day <= 22)))
+            {
+              document.getElementById("message").innerHTML = "You went in 11th if statement ";
+
+              document.getElementById("message").innerHTML = "Scorpio: You are loyal, ambitious, and resentful!";
+              document.getElementById("symbol").innerHTML = "<img src = 'Scorpiopic.jpg'>";
+            }
+            if((month == 11 &&  (day <= 23 && day >= 22)) || (month == 12 && (day >= 1  && day <= 21)))
+            {
+              document.getElementById("message").innerHTML = "You went in 12th if statement ";
+
+              document.getElementById("message").innerHTML = "Sagittarius: You are optimistic and restless!";
+              document.getElementById("symbol").innerHTML = "<img src = 'Sagittariuspic.jpg'>";
+            }
+            if((month == 12 &&  (day <= 22 && day >= 21)) || (month == 1 && (day >= 1  && day <= 19)))
+            {
+              document.getElementById("message").innerHTML = "You went in 13th if statement ";
+
+              document.getElementById("message").innerHTML = "Capricorn: You are abitous and organized!";
+              document.getElementById("symbol").innerHTML = "<img src = 'Capricornpic.jpg'>";
+            }
+
+
+        }
+      </script>
+
+      <style>
+body  { background-image: url('Horoscopepic.jpg'); }
+
+body {
+  color: yellow;
+}
+
+h1{
+  color: green;
+}
+      </style>
+   </head>
+
+   <body>
+     <h2>Horoscope</h2>
+
+     <label> Please Enter Month: </label>
+     <input type="text" id="monthid">
+
+     <label> Please Enter Day: </label>
+     <input type = "text" id="dayid">
+
+     <input type = "button" value = "ENTER" onclick = "fortune()">
+     <span id = "symbol"></span>
+     <span id = "message"></span>
+
+     <h4>"The value for month is: " <span id="myMonth"></span></h4>
+     <h4>"The value for day is: " <span id="myDay"></span></h4>
+
+
+   </body>
+</html>
